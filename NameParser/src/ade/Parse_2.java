@@ -55,6 +55,7 @@ public class Parse_2 {
                 fullName = fullName.replaceAll("  ", " ");
                 fullName = fullName.replaceAll("   ", " ");
                 fullName = fullName.replaceAll("    ", " ");
+                fullName = fullName.replaceAll("     ", " ");
                 
                 //building string for non-name data
                 for (int i = 1; i < numCol; i++) {
@@ -85,7 +86,30 @@ public class Parse_2 {
                 	ln = nameElements[2] + nameElements[3];
                 	System.out.println(fn + "|" + mn + "|" + ln + remData);
                 }
-                
+                else if (nameElements.length == 5){
+                	fn = nameElements[0];
+                	mn = nameElements[1];
+                	ln = nameElements[2] + nameElements[3] + nameElements[4];
+                	System.out.println(fn + "|" + mn + "|" + ln + remData);
+                }
+                else if (nameElements.length == 6){
+                	fn = nameElements[0];
+                	mn = nameElements[1];
+                	ln = nameElements[2] + nameElements[3] + nameElements[4] + nameElements[5];
+                	System.out.println(fn + "|" + mn + "|" + ln + remData);
+                }
+                else if (nameElements.length == 7){
+                	fn = nameElements[0];
+                	mn = nameElements[1];
+                	ln = nameElements[2] + nameElements[3] + nameElements[4] + nameElements[5] + nameElements[6];
+                	System.out.println(fn + "|" + mn + "|" + ln + remData);
+                }
+                else if (nameElements.length == 8){
+                	fn = nameElements[0];
+                	mn = nameElements[1];
+                	ln = nameElements[2] + nameElements[3] + nameElements[4] + nameElements[5] + nameElements[6]+ nameElements[7];
+                	System.out.println(fn + "|" + mn + "|" + ln + remData);
+                }
                 remData = "";
                 
             }   
