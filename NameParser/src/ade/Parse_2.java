@@ -62,24 +62,24 @@ public class Parse_2 {
                 
                 if (nameElements.length == 1) {
 					fn = nameElements[0];
-					System.out.println(fn + "|||" + remData);
+					System.out.println(fn + "||" + remData);
 				}
                 else if (nameElements.length == 2){
                 	fn = nameElements[0];
                 	ln = nameElements[1];
-                	System.out.println(fn + "||"+ ln + "|" + remData);
+                	System.out.println(fn + "||"+ ln + remData);
                 }
                 else if (nameElements.length == 3){
                 	fn = nameElements[0];
                 	mn = nameElements[1];
                 	ln = nameElements[2];
-                	System.out.println(fn + "|" + mn + "|" + ln + "|" + remData);
+                	System.out.println(fn + "|" + mn + "|" + ln  + remData);
                 }
                 else if (nameElements.length == 4){
                 	fn = nameElements[0];
                 	mn = nameElements[1];
                 	ln = nameElements[2] + nameElements[3];
-                	System.out.println(fn + "|" + mn + "|" + ln + "|" + remData);
+                	System.out.println(fn + "|" + mn + "|" + ln + remData);
                 }
                 
                 remData = "";
