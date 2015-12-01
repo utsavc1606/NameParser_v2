@@ -6,13 +6,11 @@ public class Parse {
 
 	public static void main(String[] args) {
 		
-		// The name of the file to open.
-        String fileName = args[0]; //pass output file name as second parameter
-        PrintStream out = null;
+        String fileName = args[0]; //pass input file name as second parameter
+        PrintStream out = null; 
 		try {
 			out = new PrintStream(new FileOutputStream(args[1])); //pass output file name as second parameter
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
         System.setOut(out);
@@ -23,8 +21,6 @@ public class Parse {
         String mn = null;
         String ln = null;
         
-        System.out.println("FirstName|MiddleName|LastName");  //printing out column headers in output
-
         try {
             // FileReader reads text files in the default encoding.
             FileReader fileReader = 
@@ -34,9 +30,10 @@ public class Parse {
             BufferedReader bufferedReader = 
                 new BufferedReader(fileReader);
 
+            //reading line by line
             while((line = bufferedReader.readLine()) != null) {
-            	line.replaceAll("^\\s+", "");
-                String[] elements = line.split(" ");
+            	line.replaceAll("^\\s+", ""); //removing unnecessary leading white-spaces
+                String[] elements = line.split(" "); //splitting by space
                 if (elements.length == 1) {
 					fn = elements[0];
 					System.out.println(fn+"||");
