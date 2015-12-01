@@ -7,7 +7,7 @@ Output: Pipe delimited csv. or .txt file with first three columns as FirstName, 
 Usage: <br /><br />
 1. Download NameParser_v3-1.jar from "NameParser_v2/NameParser/jars/" in the repository (https://github.com/utsavc1606/NameParser_v2). <br />
 2. Open terminal or command prompt and invoke the tool as shown: <br />
-java -jar NameParser_v3-1.jar <input file name with path.csv> <output file name with path.csv> <br />
+java -jar NameParser_v3-1.jar "input file name with path.csv" "output file name with path.csv" <br />
 3. The output file should open in MS Excel, but just in case all fields show up in the same column, <br />
 - Select the entire column.<br />
 - Go to Data tab > Text to Columns.<br />
