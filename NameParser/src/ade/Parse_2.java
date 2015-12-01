@@ -53,8 +53,8 @@ public class Parse_2 {
                 //full name will be the first column
                 fullName = elements[0];
                 fullName = fullName.replaceAll("  ", " ");
-                fullName = fullName.replaceAll("   ", "");
-                fullName = fullName.replaceAll("    ", "");
+                fullName = fullName.replaceAll("   ", " ");
+                fullName = fullName.replaceAll("    ", " ");
                 
                 //building string for non-name data
                 for (int i = 1; i < numCol; i++) {
